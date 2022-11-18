@@ -19,11 +19,12 @@ See [action.yml](action.yml)
 steps:
 - uses: actions/checkout@v2
 
-- uses: GeoWerkstatt/create-jira-release@v1
+- uses: DG-Ironman/create-jira-release@v1
   with:
     jira-project-key: 'TEST'
     jira-automation-webhook: ${{ secrets.JIRA_AUTOMATION_WEBHOOK }}
     build-version: v${{ env.VERSION }}
+    actor: ${{ github.actor }}
 ```
 
 ## Options
@@ -33,6 +34,7 @@ steps:
 | `jira-project-key`        | Jira project identifier (e.g. _TEST_) | true     |
 | `jira-automation-webhook` | Jira automation webhook url           | true     |
 | `build-version`           | Version identifier                    | true     |
+| `actor`                   | Github Actor                          | true     |
 
 ## Secrets
 
