@@ -35,6 +35,7 @@ steps:
 | `jira-automation-webhook` | Jira automation webhook url           | true     |
 | `build-version`           | Version identifier                    | true     |
 | `actor`                   | Github Actor                          | true     |
+| `target`                  | Target of the Merge                   | true     |
 
 ## Secrets
 
