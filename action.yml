@@ -10,6 +10,12 @@ inputs:
   build-version:
     description: "Version identifier"
     required: true
+  actor:
+    description: "Github username"
+    required: true
+  target:
+    description: "Branch target of the Pull Request"
+    required: false
 runs:
   using: "composite"
   steps:
